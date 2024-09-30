@@ -57,11 +57,8 @@ public class PagamentoController {
         return ResponseEntity.noContent().build();
     }
 
-    //    @GetMapping
-//    public ResponseEntity<Page<PagamentoDTO>> findAll(
-//            @PageableDefault(size = 10) Pageable pageable) {
-//
-//        Page<PagamentoDTO> dto = service.findAll(pageable);
-//        return ResponseEntity.ok(dto);
-//    }
+    @PatchMapping("/{id}/confirmar")
+    public void confirmarPagamentoDePedido(@PathVariable @NotNull Long id){
+        service.confirmarPagamentoDePedido(id);
+    }
 }
