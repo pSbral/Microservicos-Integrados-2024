@@ -1,0 +1,8 @@
+# MySQL files
+mysql/.data/mysql-data/mysql.sock
+mysql/.data/mysql-data/*.pid
+mysql/.data/mysql-data/*.log
+mysql/.data/mysql-data/auto.cnf
+mysql/.data/mysql-data/binlog.index
+mysql/.data/mysql-data/ib_buffer_pool
+
